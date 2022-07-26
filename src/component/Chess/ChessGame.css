@@ -1,0 +1,21 @@
+.heading-container {
+display:flex;
+flex-direction:row;
+justify-content: space-around;
+}
+
+.flex-container {
+display:flex;
+flex-wrap: column;
+/* justify-content: space-around; */
+}
+
+@media screen and (max-width: 820px) {
+    .flex-container {
+      flex-direction:column;
+    }
+  }
+.video-container {
+display:flex;
+flex-direction:column;
+}
