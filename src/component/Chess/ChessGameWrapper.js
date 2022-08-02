@@ -140,12 +140,13 @@ const ChessGameWrapper = (props) => {
               Hey <strong style={{textDecoration: "underline"}}>{props.myUserName}</strong>, just copy and paste the below URL
               below and send it to your friend to play chess online:
             </h1>
+            {console.log('fdsaf',window.hostname,window)}
             <textarea
                 style={{ textAlign:'center' ,  height: "30px", width:"500px" }}
                 onFocus={(event) => {
                     event.target.select()
                 }}
-                value = { "http://localhost:3000/game/" + gameId}
+                value = { `${window.location.origin}/game/` + gameId}
                 type = "text">
               </textarea>
             <br></br>

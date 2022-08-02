@@ -1,6 +1,6 @@
 import './App.css';
 import React, { useState } from 'react';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
+import { BrowserRouter as Router, Switch, Route, Redirect } from 'react-router-dom'
 import ReactNotification from 'react-notifications-component'
 import 'react-notifications-component/dist/theme.css'
 import { makeStyles } from '@material-ui/core/styles';
@@ -75,6 +75,7 @@ function App() {
                 <JoinRoom />
             }
           </Route>
+          <Redirect to='/'></Redirect>
         </Switch>
       </Router>
     </UserContext.Provider>
