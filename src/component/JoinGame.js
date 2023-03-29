@@ -26,10 +26,7 @@ const JoinGameRoom = (gameid, userName, isCreator) => {
 const JoinGame = ({ userName, gameCreater }) => {
   const { gameId } = useParams();
 
-  // console.log('In Join Game rendered',gameId);
-
   JoinGameRoom(gameId, userName, gameCreater);
-  // console.log('In JoinGame rendered 2');
 
   return (
     <>

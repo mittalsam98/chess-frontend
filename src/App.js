@@ -82,7 +82,6 @@ function App() {
         <Switch>
           <Route path='/' exact component={OnBoard} />
           {/* <Route path="/" exact component={ChessBoard} /> */}
-          {/* {console.log(didRedirect)} */}
           <Route path='/game/:gameId'>
             {didRedirect ? (
               <div style={{ background: '#312E2B', height: '100vh' }}>

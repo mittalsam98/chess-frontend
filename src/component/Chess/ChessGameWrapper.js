@@ -66,7 +66,6 @@ const ChessGameWrapper = (props) => {
 
   useEffect(() => {
     socket.on('playerJoinedRoom', (statusUpdate) => {
-      // console.log('Orientation Color  ' + statusUpdate.mySocketId + '  ' + socket.id);
       setOrientationColor(
         userContext.gameCreater
           ? userContext.orientationColor
@@ -80,7 +79,6 @@ const ChessGameWrapper = (props) => {
     });
 
     socket.on('status', (statusUpdate) => {
-      // console.log('status' + statusUpdate);
       alert(statusUpdate);
       if (
         statusUpdate === 'This game session does not exist.' ||

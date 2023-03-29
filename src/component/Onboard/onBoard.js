@@ -132,7 +132,6 @@ const OnBoard = () => {
     setGameId(newGameId);
     setDidSetUserName(true);
     socket.emit('createNewGame', data);
-    // console.log('In onBoard Submit',userName.length>0); //////////////////
   }
 
   const onChange = (e) => {
