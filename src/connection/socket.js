@@ -1,7 +1,7 @@
 import { io } from 'socket.io-client';
 
 // const URL = 'https://chess-web-online.herokuapp.com/';
-const URL = 'https://chess-web-online.vercel.app/';
+const URL = 'https://purrfect-dandy-confidence.glitch.me/';
 
 var connectionOptions = {
   withCredentials: true,
