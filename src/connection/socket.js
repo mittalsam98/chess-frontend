@@ -6,9 +6,9 @@ const URL = 'https://chess-web-online.vercel.app/';
 var connectionOptions = {
   withCredentials: true,
   extraHeaders: {
-    'my-custom-header': 'abcd'
+    'Access-Control-Allow-Headers': '*'
   },
-  transports: ['websocket']
+  transports: ['websocket', 'polling', 'flashsocket']
 };
 const socket = io(URL, connectionOptions);
 var mySocketId;
