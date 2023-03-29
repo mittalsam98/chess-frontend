@@ -37,10 +37,7 @@ const JoinRoom = () => {
     userContext.setDidRedirect(true);
     userContext.setGameCreater(false);
     userContext.setUserName(userName);
-    // console.log('In JoinRoom Submit');
   }
-  // console.log('In Join Room rendered (Not Redirect) ');
-
   const onChange = (e) => {
     e.preventDefault();
     setUserName(e.target.value);
