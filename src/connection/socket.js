@@ -3,7 +3,14 @@ import { io } from 'socket.io-client';
 // const URL = 'https://chess-web-online.herokuapp.com/';
 const URL = 'https://chess-web-online.vercel.app/';
 
-const socket = io(URL, { transports: ['websocket'] });
+var connectionOptions = {
+  withCredentials: true,
+  extraHeaders: {
+    'my-custom-header': 'abcd'
+  },
+  transports: ['websocket']
+};
+const socket = io(URL, connectionOptions);
 var mySocketId;
 
 socket.on('createNewGame', (statusUpdate) => {
